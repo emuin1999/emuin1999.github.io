@@ -1,0 +1,103 @@
+@charset "utf-8"
+
+
+/* HTML and Body Styles */
+
+html {
+	background-color: hsl(27,72%,72%);
+}
+
+body {
+	color: rgb(92,91,82);
+	background-color: ivory;
+	font-family: Geneva, serif, San-serif;
+}
+
+
+/* Heading Styles */
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+h1,h2 {
+	font-family: Copperplate, Helvetica, Geneva, sans-serif;
+	letter-spacing: 0.1em;
+}
+article h2 {
+	font-family: time-new-roman, serif;
+	color: blue;
+	font-size: 1.3em;
+}
+
+
+
+/* List Styles */
+
+article.outline ol {
+	list-style-type: upper-roman;
+}
+
+article#review_3f ul li:first-of-type {
+	list-style-image: url(download4.jpg);
+}
+article#review_3f ul li:nth-of-type(2){
+	list-style-image: url(download5.jpg);
+}
+
+article#review_3f ul li:last-of-type {
+	list-style-image: url (download6.jpg);
+}
+
+
+/* Blockquote Styles */
+
+ blockquote	{
+	color: rgb(220,163,111);
+	margin: 17px 4px;
+	quotes: "\201C" "\201D";
+}
+ blockquote p::first-letter {
+	content: open-quote;
+	font-family: 'time New Roman', Times, serif;
+	font-size: 1.5em;
+	font-weight: bold;
+ }
+
+
+
+
+/* Navigation Styles */	
+
+nav {
+	font-size:0.9em;
+}
+
+nav > ul {
+	line-height: 1.8em;
+	list-style-type: none;
+	padding-left: 6px;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+	color: rgb(151, 151, 151);
+	text-decoration: none; 
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	color: rgb(251, 61, 255);
+	text-decoration: underline;
+}
+
+
+/* Footer Styles */
+body > footer address{
+	background-color: rgb(210,138,27);
+	color: white; color: rgba(247,255,255,0.9);
+	font: normal small-cap bold 0.9em/3em
+		Quicksand, Verdana, Geneva, sans-serif;
+	text-align: center;
+}

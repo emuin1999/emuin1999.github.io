@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<title>Furry Family Friend Rewiews</title>
+	<link href="3f_style1.css" rel="stylesheet" />
+	<link href="3f_layout.css" rel="stylesheet" />
+	<script src="3f_scriptJ.js" defer></script>
+	
+</head>
+
+	<!-- sectioning, grouping and text level element -->
+<body>
+	<header class="horizontal">
+	<a href="3f_main.html"><img src="download3.jpg" alt="Furry Family Friend" /></a>
+	
+	<!-- navigation list with hypertext link -->
+	<nav>
+		<ul>
+			<li><a href="3f_about.html">About Us</a></li>
+			<li><a href="3f_reviews.html">Reviews</a></li>
+			<li><a href="3f_contact.html">Contact</a></li>
+			<li><a href="index.html">Main</a></li>
+			<li><a href="3f_serviceR.html">Service Request</a></li>
+		</ul>
+	</nav>
+	<h2 id="timeHeading">Current Time</h2>
+         
+         <div id="dateNow">11/8/2021<br />2:45:12 p.m.</div>
+		 <h3>Yearly Countdown Clock</h3>
+		 <div id="countdown">
+            <div><span id="days">53</span><br />Days</div>
+            <div><span id="hrs">9</span><br />Hours</div>
+            <div><span id="mins">14</span><br />Minutes</div>
+            <div><span id="secs">48</span><br />Seconds</div>
+         </div>
+	</header>
+	<article id="review_3f">
+		<h1>
+		Reviews
+		</h1>
+		<h4>Here are three benefits of having a furry friend for the family</h4>
+		<ul>
+			<li>It’s easy to see how owning a dog would lead to spending more time outside and playing more. 
+			Dogs are a great companion for physical activities, and 
+			they require being walked if you live somewhere without a yard.
+			All of that leads to healthier kids who are used to a more active lifestyle.</li>
+			<li>A dog in the family can help brothers and sisters grow closer through their common love of their pet. 
+			From sharing responsibilities for care, to just playing with the dog in the backyard, siblings can bond.</li>
+			<li>The daily commitment of caring for an animal is a great way to 
+			teach kids the importance of dependability and responsibility. 
+			To be a dog’s provider is an honor that requires a lot of patience and work.</li>
+		</ul>
+		<blockquote>
+			<p>
+			One of the core problems associated with owning or 
+			parenting a pet is a lack of information.
+			That said, Furry Family Friend seeks to fill that vacuum. 
+			If you are looking for timely and accurate pet-related guidance,
+			news, reviews, and statistics, then Furry Family Friend is your go-to website.
+			More specifically, users learn about pet care, health, training, and more
+			</p>
+			<p>London Animal Service</p>
+		</blockquote>
+		<blockquote>
+			<p>
+			The Furry Family Friend is a website dedicated strictly to dogs and their owners. 
+			While this kind of pet niche website is not uncommon, 
+			Furry Family Friend is unique in several aspects. 
+			Visitors can expect advice on choosing a dog breed, raising and training dogs,
+			and a product and service lineup to get them through the process.
+			</p>
+			<p>Dogs and Families</p>
+		</blockquote>
+		<blockquote>
+			<p>World Dog Award</p>
+			<p>American Humane Hero Dog</p>
+		</blockquote>
+		<blockquote>
+			<p>London Dog Expertise</p>
+			<p>Sydney Dog Trainers Award</p>
+		</blockquote>
+	</article> 
+	</br>
+	<strong>We very much appreciate you taking the time to leave feed back about our service.</strong>
+	<p>Note:<em>Some fields are required </em></p>
+	<form id="information" action="http://www.example.com/furryfamilyfriend/information" method="POST" >
+		<fieldset id="revInfo">
+			<legend>Share Your Experience</legend>
+			<!-- Below is the date/time input type -->
+			<div class="formRow">
+				<label for="consult">Consultation Date</label>
+				<input name="consdate" id="consult" type="datetime-local" required />
+			</div>
+			<!-- Below is a selection list -->
+			<div class="formRow">
+				<label for="intro">Where did you hear about us? </br>(Select all that apply)</label>
+				<select name="custIntro" id="intro" size="5" multiple>
+					<option value="internet">Internet</option>
+					<option value="mag">Magazine</option>
+					<option value="news">NewsPaper</option>
+					<option value="word">Word of Mouth</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			
+			<!-- Below is the range slider -->
+			<div class="formRow">
+				<label for="rate">Rate the overall Service <br />(0=poor, 10=very good)</label>
+		
+				0
+				<input name="custRate" id="rate" type="range" value="5" step="1" min="1" max="10" />
+				10
+			</div>
+			<!-- Radio button input type-->
+			<div class="formRow">
+				<label>Was your service friendly?</label>
+				<fieldset optGroup>
+					<label for="fYes">Yes</label>
+					<input name="fPet" id="fYes" value="yes" type="radio" />
+					<label for="fNo">No</label>
+					<input name="fPet" id="fNo" value="no" type="radio" />
+				</fieldset>
+			</div>
+			
+			<!-- Radio button input type-->
+			<div class="formRow">
+				<label>Did we answer your questions and concerns?</label>
+				<fieldset optGroup>
+					<label for="fYes">Yes</label>
+					<input name="fPet" id="fYes" value="yes" type="radio" />
+					<label for="fNo">No</label>
+					<input name="fPet" id="fNo" value="no" type="radio" />
+				</fieldset>
+			</div>
+			
+			<!-- Radio button input type-->
+			<div class="formRow">
+				<label>Was the process smooth?</label>
+				<fieldset optGroup>
+					<label for="fYes">Yes</label>
+					<input name="fPet" id="fYes" value="yes" type="radio" />
+					<label for="fNo">No</label>
+					<input name="fPet" id="fNo" value="no" type="radio" />
+				</fieldset>
+			</div>
+			
+			<!-- Radio button input type-->
+			<div class="formRow">
+				<label>Was the process difficult?</label>
+				<fieldset optGroup>
+					<label for="fYes">Yes</label>
+					<input name="fPet" id="fYes" value="yes" type="radio" />
+					<label for="fNo">No</label>
+					<input name="fPet" id="fNo" value="no" type="radio" />
+				</fieldset>
+			</div>
+			<!-- Textarea box below -->
+			<label for="commBox">Tell us more about your exparience</label>
+			<textarea name="custComm" id="commBox"></textarea>
+			
+			<!-- input type checkbox below -->
+			<div class="formRow"></div>
+			<input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+			<label for="mailCB">Add me to your mailing list for great coupons and specials!</label>
+		</fieldset>
+		
+		<!-- Submit and Cancel buttons below -->
+		<div id="buttons">
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Cancel" />
+		</div>
+	</form>
+	<!-- Character reference -->
+	<footer>
+		@2024 DogBreed &#8226; Global Animal Agency London, England &#8226; All Rights Reserved
+	</footer>
+	
+</body>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<title>Service Request</title>
+	<link href="3f_style1.css" rel="stylesheet" />
+	<link href="3f_layout.css" rel="stylesheet" />
+	<script src="3f_scriptJ.js" defer></script>
+	
+</head>
+
+	<!-- sectioning, grouping and text level element -->
+<body>
+	<header class="horizontal">
+	<a href="3f_main.html"><img src="download3.jpg" alt="Furry Family Friend" /></a>
+	
+		<!-- navigation list with hypertext link -->
+	<nav>
+		<ul>
+			<li><a href="3f_about.html">About Us</a></li>
+			<li><a href="3f_reviews.html">Reviews</a></li>
+			<li><a href="3f_contact.html">Contact</a></li>
+			<li><a href="index.html">Main</a></li>
+			<li><a href="3f_serviceR.html">Service Request</a></li>
+		</ul>
+	</nav>
+	<h2 id="timeHeading">Current Time</h2>
+         
+         <div id="dateNow">11/8/2021<br />2:45:12 p.m.</div>
+		 <h3>Yearly Countdown Clock</h3>
+		 <div id="countdown">
+            <div><span id="days">53</span><br />Days</div>
+            <div><span id="hrs">9</span><br />Hours</div>
+            <div><span id="mins">14</span><br />Minutes</div>
+            <div><span id="secs">48</span><br />Seconds</div>
+         </div>
+	</header>
+	<article class="outline">
+		<h1>
+		Service Request Form
+		</h1>
+		<p>
+		Looking to add a furry friend to the family and need help with the right information? Here at Furry Family Friend it is our passion to bring 
+		two worlds together. Simply fill out the required information below, submit and one of our best porfessionals will be at your service to aid you in finding that special 
+		furry fmaily friend.
+		</p>
+		<p>Note:<em>Some fields are required </em></p>
+		<!-- Below is a form with multiple fieldsets -->
+	<form id="information" action="http://www.example.com/furryfamilyfriend/information" method="POST">
+		<fieldset id="requInfo">
+			<legend>Service request </legend>
+			<!-- Name field is one of many text input type also required -->
+			<div class="formRow">
+				<label for="name">Name</label>
+				<input name="custName" id="name" type="text" placeholder="first and last name" required />
+			</div>
+		
+			<div class="formRow">
+				<label for="street">Street</label>
+				<input name="custStreet" id="street" type="text" />
+			</div>
+			
+			<div class="formRow">
+				<label for="city">City</label>
+				<input name="custCity" id="city" type="text" value="Charlotte" />
+			</div>
+			
+			<div class="formRow">
+				<label for="state">State</label>
+				<input name="custState" id="state" type="text" value="NC" />
+			</div>
+			
+			<!-- postal code and phone number are both validiated with pattern and field length -->
+			<div class="formRow">
+				<label for="postal">Postal Code</label>
+				<input name="custZip" id="postal" type="text" placeholder="nnnnn (-nnnn)"  pattern="^\d{5}(-\d{4})?$" />
+			</div>
+			<!-- moblie keyboard type ia applied below -->
+			<div class="formRow">
+				<label for="phone">Phone#</label>
+				<input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{5\10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+			</div>
+			<!-- Email field is required-->
+			<div class="formRow">
+				<label for="mail">Email</label>
+				<input name="custMail" id="mail" type="email" required />
+			</div>
+			<!-- Radio button input type-->
+			<div class="formRow">
+				<label>Is this your first Pet?</label>
+				<fieldset optGroup>
+					<label for="fYes">Yes</label>
+					<input name="fPet" id="fYes" value="yes" type="radio" />
+					<label for="fNo">No</label>
+					<input name="fPet" id="fNo" value="no" type="radio">
+				</fieldset>
+			</div>
+			<!--Datalist that also allows for input -->
+			<div class="formRow">
+				<label for="breed">What is your favorite Dog Breed?</label>
+				<input name="favBreed" id="breed" type="text" list="breedType" />
+				<datalist id="breedType">
+					<option value="Beagle">
+					<option value="Golden Retriever">
+					<option value="Labrador Retriever">
+					<option value="Poodle">
+					<option value="Irish Setter">
+					<option value="Collie">
+					<option value="Newfoundland">
+					<option value="Bichon Frise">
+					<option value="Cavalier King Charles Spaniel">
+					<option value="English Bulldog">
+				</datalist>
+				
+			</div>
+			
+			<div class="formRow">
+				<label for="size">How large is your family?</label>
+				<input name="famSize" id="size" type="number" value="2" step="2" min="2" max="12" />
+			</div>
+			
+		</fieldset>
+		<!-- Submit and Cancel buttons below -->
+		<div id="buttons">
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Cancel" />
+		</div>
+	
+	</form>
+	</article>
+	<!-- Character reference -->
+	<footer>
+		@2024 DogBreed &#8226; Global Animal Agency London, England &#8226; All Rights Reserved
+	</footer>
+	
